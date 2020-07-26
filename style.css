@@ -1,0 +1,208 @@
+ * {
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: 80px 1fr 30px;
+    height: 100vh;
+    grid-gap: 5px;
+}
+
+nav {
+    font-size: 25px;
+    height: 75px;
+    background-color: azure;
+}
+
+aside {
+    background-color: azure;
+}
+
+main {
+    background-color: white;
+    border: 1px black;
+}
+
+footer {
+    background-color: azure;
+    font-size: x-small;
+}
+
+nav, footer {
+    grid-column: span 2;
+}
+
+.flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* URL input */
+#upload-pic > label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#upload-pic > input {
+    height: 25px;
+    width: 250px;
+    font-size: 20px;
+}
+
+#upload-pic > button {
+    padding: 10px;
+    border-radius: 10px;
+    color:  white;
+    font-size: 15px;
+    background-color: rgb(95, 214, 230);
+}
+
+#upload-pic > button:hover {
+    color: red;
+}
+
+/* Text Inputs */
+.txt-input {
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.txt-input > div > input {
+    height: 20px;
+    width: 200px;
+}
+
+#t1 {
+    margin-bottom: 40px;
+}
+
+
+/* Buttons */
+
+#action-buttons {
+display: flex;
+}
+
+#gen {
+    margin-right: 50px;
+}
+
+#gen:hover {
+    color: red;
+}
+
+#reset:hover {
+    color: red;
+}
+
+#gen, #reset {
+    padding: 10px;
+    border-radius: 15px;
+    color:  white;
+    font-size: 18px;
+    background-color: rgb(95, 214, 230);
+}
+
+/* Image upload */
+
+img {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Text outputs */
+
+.text-out {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Impact';
+    text-shadow: 5px 5px black;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.container .input1 {
+    position: absolute;
+    text-align: center;
+    top: 12%;
+}
+
+.container .input2 {
+    position: absolute;
+    text-align: center;
+    bottom: 12%;
+}
+
+/* modal rendering */
+
+.modal {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* sit on top */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: lightcyan;
+}
+
+/* modal content */
+.modal-interior {
+    display: grid;
+    height: 90vh;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 1fr 60px;
+    background-color: #fefefe;
+    border: 1px dotted red;
+}
+
+.modal .modal-interior div{
+    grid-column: span 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-interior button {
+    grid-column: span 2;
+    border-radius: 12px;
+    margin: 3px;
+    background-color: lightcyan;
+}
+
+.modal .modal-interior button:hover {
+    color: red;
+}
+
+#modal-pic canvas {
+    max-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+

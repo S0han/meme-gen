@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Kane's Meme Generator</title>
+</head>
+<body>
+    
+    <!-- Nav bar -->
+    <nav class="flex-ctr">Kane's Meme Generator</nav>
+    
+    <!-- Meme Construction -->
+    <main class="container flex-ctr" id="pics">
+        <div class="input1 text-out" id="input1"></div>
+        <div class="input2 text-out" id="input2"></div>
+        <div id="mainMeme">
+        </div>
+    </main>
+    
+    <!-- Meme Parameters -->
+    <aside class="controls">
+        
+        <!-- Upload pic area -->
+        <div id="upload-pic">
+            <label for="url">Enter image URL:</label>
+            <input type="url" name="url" id="url" placeholder="https://example.com">
+            <button id="upload">UPLOAD</button>
+        </div>
+        
+        <!-- text input parameters -->
+        <div class="txt-input">
+            <div id="t1">
+            <label for="text1">Text1 :</label>
+            <input id="text1" type="text">
+            </div>   
+            
+            <div id="t2">
+            <label for="text2">Text2 :</label>
+            <input id="text2" type="text">
+            </div>
+        </div>
+        
+        <!-- option buttons -->
+        <div id="action-buttons">
+            <button id="gen">Generate!</button>
+            <button id="reset">Reset!</button>
+        </div>
+    
+    </aside>
+    
+    <!-- Footer -->
+    <footer class="flex-ctr">Copyright &copy; 2020</footer>
+
+    <!-- Modal -->
+    <div id="memeModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-interior">
+            
+            <div id="modal-pic">
+                <p>THe modal works!</p>
+            </div>
+            
+            <button class="modalBtn" id="download">Download</button>
+            <button class="modalBtn" id="save">Save</button>
+            <button class="modalBtn" id="close">Close</button>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
